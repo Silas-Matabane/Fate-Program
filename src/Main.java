@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        int fate = (int)(Math.random() * 24);
+        int fate = (int)(Math.random() * 30);
         System.out.println("Case: " + fate);
         switch (fate) {
             case 0:
@@ -24,17 +24,17 @@ public class Main {
                 }
                 break;
             case 2:
-                System.out.println("Ethical Hacking -- 3 Hours");
+                System.out.println("Ethical Hacking -- 2 Hours");
                 break;
             case 3:
-                System.out.println("Database Text - Book Tinny College Project -- 30 Minutes");
+                System.out.println("Database TextBook Tinny College Project -- 30 Minutes");
                 break;
             case 4:
                 System.out.println("Computer Networks -- Textbook -- 2 Hours");
                 break;
             case 5:
                 System.out.println("Time for java, But specifically focus on");
-                int javaField = (int)(Math.random() * 4.0);
+                int javaField = (int)(Math.random() * 5.0);
                 System.out.println("Case field: " + javaField);
                 switch (javaField) {
                     case 0:
@@ -48,6 +48,12 @@ public class Main {
                         break;
                     case 3:
                         System.out.println("Java Textbook -- 2 Hour");
+                        break;
+                    case 4:
+                        System.out.println("Java SoloLearn -- 2 Hour");
+                        break;
+                    case 5:
+                        System.out.println("Java W3Schools -- 2 Hour");
                         break;
                     default:
                         System.out.println("Something is wrong");
@@ -67,7 +73,7 @@ public class Main {
                 System.out.println("Organize your music library -- 1 Hour");
                 break;
             case 10:
-                System.out.println("ASP.NET documentation -- 3 Hours");
+                System.out.println("ASP.NET documentation -- 2 Hours");
                 break;
             case 11:
                 System.out.println("100 days - Python Project -- 1 Hour");
@@ -76,7 +82,7 @@ public class Main {
                 System.out.println("RESTful Web API - The Complete Guide (.NET7 API) Part 1 -- 2 Hours");
                 break;
             case 13:
-                System.out.println("Try to solve 1 leet code problem -- 2 Hours");
+                System.out.println("Try to solve 1 leet code problem -- 30 minutes");
                 break;
             case 14:
                 System.out.println("MySQL Udemy Project -- 3 Hours");
@@ -88,13 +94,13 @@ public class Main {
                 System.out.println("Portfolio -- 2 HOURS");
                 break;
             case 17:
-                System.out.println("The Complete 2023 Web Development Bootcamp -- 2 Hours");
+                System.out.println("The Complete 2024 Web Development Bootcamp -- 2 Hours");
                 break;
             case 18:
                 System.out.println(".NET Core MVC - The Complete Guide 2024 [E-commerce app] -- 2 Hours");
                 break;
             case 19:
-                System.out.println(".The Complete JavaScript Course 2024: From Zero to Expert!");
+                System.out.println(".The Complete JavaScript Course 2024: From Zero to Expert! -- Complete a section ");
                 break;
             case 20:
                 System.out.println("Time for Internship related at Konecta");
@@ -143,6 +149,52 @@ public class Main {
             case 23:
                 System.out.println("Organize your Programming books & Docs folder -- 1 hour");
                 break;
+            case 24:
+                System.out.println("Find out to push a project from inteliJ to GitHub. -- 1 hour 30 minutes");
+                break;
+            case 25:
+                System.out.println("Update CV. -- 30 minutes");
+                break;
+            case 26:
+                System.out.println("Find a Youtube course tutorial to learn front-end -- 2 hours");
+                int lessonOption =  (int)(Math.random() * 6.0);
+                System.out.println("Your tutorial is  " + lessonOption);
+                switch (lessonOption) {
+                    case 0:
+                        System.out.println("CSS");
+                        break;
+                    case 1:
+                        System.out.println("Bootstrap");
+                        break;
+                    case 2:
+                        System.out.println("Sass");
+                        break;
+                    case 3:
+                        System.out.println("Tailwind CSS");
+                        break;
+                    case 4:
+                        System.out.println("HTML wireframes and templates");
+                        break;
+                    case 5:
+                        System.out.println("WordPress");
+                        break;
+                    default:
+                        System.out.println("Something is your game code");
+                        break;
+                }
+            case 27:
+                System.out.println("Organize your bookmarks and sync them across browsers -- 30 minutes");
+                break;
+            case 28:
+                System.out.println("Web Development Sololearn -- 1 hour");
+                break;
+            case 29:
+                System.out.println("Research How to add an image to Github readme File -- 1 hour");
+                break;
+
+
+
+
 
             default:
                 System.out.println("Error Somewhere");
