@@ -20,6 +20,7 @@ public class Main {
                     case 6 -> System.out.println("Learn How to play a new Song - Cover wise -- 2 Hours");
                     case 7 -> System.out.println("Research About -- Boss GT-8 -- Manual -- 2 HOURS");
                     case 8 -> System.out.println("Learn Bass guitar -- Your bass checks. -- 2 hours");
+                    case 9 -> System.out.println("Fix the recording issue. -- 1 hour");
                     default -> System.out.println("Something is wrong");
                 }
                 break;
