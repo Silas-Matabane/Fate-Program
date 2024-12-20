@@ -4,7 +4,7 @@ public class Main {
         System.out.println("Case: " + fate);
         switch (fate) {
             case 0:
-                System.out.println("Introduction to C# -- SoloLearn -- 2 Hours");
+                System.out.println("Introduction to C# -- SoloLearn -- 1 Hours");
                 break;
             case 1:
                 System.out.println("Time for music, But specifically focus on");
