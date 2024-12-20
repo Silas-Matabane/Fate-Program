@@ -204,10 +204,16 @@ public class Main {
                     default -> System.out.println("Something is wrong");
                 }
                 break;
-
-
-
-
+            case 32:
+                System.out.println("Time for GitHub, But specifically focus on");
+                int gitHubTask = (int) (Math.random() * 2);
+                System.out.println("Case field: " + gitHubTask);
+                switch (gitHubTask) {
+                    case 0 -> System.out.println("Restart Microsoft Learn GitHub lesson - 1 Hour ");
+                    case 1 -> System.out.println("Start the W3Schools GitHub lesson - 1 Hour ");
+                    default -> System.out.println("Something is wrong");
+                }
+                break;
 
             default:
                 System.out.println("Error Somewhere");
