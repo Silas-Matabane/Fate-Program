@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        int fate = (int)(Math.random() * 30);
+        int fate = (int)(Math.random() * 32);
         System.out.println("Case: " + fate);
         switch (fate) {
             case 0:
@@ -24,7 +24,7 @@ public class Main {
                 }
                 break;
             case 2:
-                System.out.println("Ethical Hacking -- 2 Hours");
+                System.out.println("Ethical Hacking -- 2 Hours\nNext Session Complete Section 4 & 5");
                 break;
             case 3:
                 System.out.println("Database TextBook Tinny College Project -- 30 Minutes");
@@ -190,6 +190,19 @@ public class Main {
                 break;
             case 29:
                 System.out.println("Research How to add an image to Github readme File -- 1 hour");
+                break;
+
+            case 30:
+                System.out.println("Organize your Personal OneDrive Documents -- 30 minutes");
+                break;
+            case 31:
+                System.out.println("Time for Forex Trading, But specifically focus on");
+                int forextask = (int) (Math.random() * 1);
+                System.out.println("Case field: " + forextask);
+                switch (forextask) {
+                    case 0 -> System.out.println("Manage & Organize your accounts");
+                    default -> System.out.println("Something is wrong");
+                }
                 break;
 
 
