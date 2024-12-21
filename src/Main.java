@@ -105,15 +105,15 @@ public class Main {
     }
 
     private static void handleFrontEnd() {
-        System.out.println("Find a Youtube course tutorial to learn front-end -- 2 hours");
+        System.out.println("Find a Youtube course tutorial to learn front-end");
         int lessonOption =  (int)(Math.random() * 6.0);
-        System.out.println("Your tutorial is  " + lessonOption);
+        System.out.println("Your tutorial is option:  " + lessonOption+"\nOn the previous session the conclusion was that the I have to really lean html and css");
         switch (lessonOption) {
             case 0 -> System.out.println("CSS");
             case 1 -> System.out.println("Bootstrap");
             case 2 -> System.out.println("Sass");
             case 3 -> System.out.println("Tailwind CSS");
-            case 4 -> System.out.println("HTML wireframes and templates");
+            case 4 -> System.out.println("HTML wireframes and templates -- 1 hour");
             case 5 -> System.out.println("WordPress");
             default -> System.out.println("Something is your game code");
         }
