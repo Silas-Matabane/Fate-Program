@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        int fate = (int)(Math.random() * 32);
+        int fate = (int)(Math.random() * 34);
         System.out.println("Case: " + fate);
         switch (fate) {
             case 0:
@@ -76,7 +76,7 @@ public class Main {
                 System.out.println("ASP.NET documentation -- 2 Hours");
                 break;
             case 11:
-                System.out.println("100 days - Python Project -- 1 Hour");
+                System.out.println("100 days - Python Project -- Complete A day");
                 break;
             case 12:
                 System.out.println("RESTful Web API - The Complete Guide (.NET7 API) Part 1 -- 2 Hours");
@@ -213,6 +213,9 @@ public class Main {
                     case 1 -> System.out.println("Start the W3Schools GitHub lesson - 1 Hour ");
                     default -> System.out.println("Something is wrong");
                 }
+                break;
+            case 33:
+                System.out.println("Take a tutorial on how to use Copilot -- 1 hour 30 minutes.");
                 break;
 
             default:
