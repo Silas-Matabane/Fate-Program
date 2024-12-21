@@ -123,9 +123,10 @@ public class Main {
         System.out.println("Time for Forex Trading, But specifically focus on");
         int forextask = (int) (Math.random() * 1);
         System.out.println("Case field: " + forextask);
-        switch (forextask) {
-            case 0 -> System.out.println("Manage & Organize your accounts");
-            default -> System.out.println("Something is wrong");
+        if (forextask == 0) {
+            System.out.println("Manage & Organize your accounts");
+        } else {
+            System.out.println("Something is wrong");
         }
     }
 
