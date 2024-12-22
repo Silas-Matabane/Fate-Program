@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        int fate = (int)(Math.random() * 34);
+        int fate = (int)(Math.random() * 38);
         System.out.println("Case: " + fate);
         handleFate(fate);
     }
@@ -26,7 +26,7 @@ public class Main {
             case 16 -> System.out.println("Portfolio -- 2 HOURS");
             case 17 -> System.out.println("The Complete 2024 Web Development Bootcamp -- 2 Hours");
             case 18 -> System.out.println(".NET Core MVC - The Complete Guide 2024 [E-commerce app] -- 2 Hours");
-            case 19 -> System.out.println(".The Complete JavaScript Course 2024: From Zero to Expert! -- Complete a section ");
+            case 19 -> System.out.println("The Complete JavaScript Course 2024: From Zero to Expert! -- Complete a section");
             case 20 -> handleInternship();
             case 21 -> handleGame();
             case 22 -> System.out.println("Solo learn - Python for Beginners -- 2 HOURS");
@@ -41,6 +41,10 @@ public class Main {
             case 31 -> handleForex();
             case 32 -> handleGitHub();
             case 33 -> System.out.println("Take a tutorial on how to use Copilot -- 1 hour 30 minutes.");
+            case 34 -> System.out.println("Manage Web browser Bookmarks -- 45 minutes.");
+            case 35 -> System.out.println("GO Through Discord and understand how it works -- 30 minutes.");
+            case 36 -> System.out.println("Manage your YouTube playlists and channel subscription -- 45 minutes.");
+            case 37 -> System.out.println("Exercise -- 15 minutes.");
             default -> System.out.println("Error Somewhere");
         }
     }
