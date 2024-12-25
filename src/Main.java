@@ -1,6 +1,39 @@
+import java.io.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
 public class Main {
+    private static List<Integer> taskList = new ArrayList<>();
+    private static Set<Integer> pickedTasks = new HashSet<>();
+    private static final String TASK_FILE = "picked_tasks.txt";
+
     public static void main(String[] args) {
-        int fate = (int)(Math.random() * 38);
+        loadPickedTasks();
+        initializeTaskList();
+        pickNextTask();
+        savePickedTasks();
+    }
+
+    private static void initializeTaskList() {
+        for (int i = 0; i < 38; i++) {
+            if (!pickedTasks.contains(i)) {
+                taskList.add(i);
+            }
+        }
+        Collections.shuffle(taskList);
+    }
+
+    private static void pickNextTask() {
+        if (taskList.isEmpty()) {
+            System.out.println("All tasks have been picked. Resetting the task list.");
+            pickedTasks.clear();
+            initializeTaskList();
+        }
+        int fate = taskList.remove(0);
+        pickedTasks.add(fate);
         System.out.println("Case: " + fate);
         handleFate(fate);
     }
@@ -45,49 +78,37 @@ public class Main {
             case 35 -> System.out.println("GO Through Discord and understand how it works -- 30 minutes.");
             case 36 -> System.out.println("Manage your YouTube playlists and channel subscription -- 45 minutes.");
             case 37 -> System.out.println("Exercise -- 15 minutes.");
-
-
             default -> System.out.println("Error Somewhere");
         }
     }
 
     private static void handleMusic() {
-        System.out.println("Time for music, But specifically focus on");
-        int musicField = (int) (Math.random() * 9);
-        System.out.println("Case field: " + musicField);
-        switch (musicField) {
-            case 0 -> System.out.println("Acoustic Guitar - 2 HOURS");
-            case 1 -> System.out.println("Nylon Guitar - 2 HOURS");
-            case 2 -> System.out.println("Cubase - Learn Cubase -- 2 Hours");
-            case 3 -> System.out.println("Fl Studio - learn How to record - 2 HOURS");
-            case 4 -> System.out.println("Learn chords - electric -- 2 Hours");
-            case 5 -> System.out.println("Learn new electric licks -- 2 Hours");
-            case 6 -> System.out.println("Learn How to play a new Song - Cover wise -- 2 Hours");
-            case 7 -> System.out.println("Research About -- Boss GT-8 -- Manual -- 2 HOURS");
-            case 8 -> System.out.println("Learn Bass guitar -- Your bass checks. -- 2 hours");
-            case 9 -> System.out.println("Fix the recording issue. -- 1 hour");
+        System.out.println("Time for Music");
+        int task = (int) (Math.random() * 3.0);
+        System.out.println("Case field: " + task);
+        switch (task) {
+            case 0 -> System.out.println("Practice Guitar -- 1 Hour");
+            case 1 -> System.out.println("Learn a new song -- 1 Hour");
+            case 2 -> System.out.println("Compose a new piece -- 1 Hour");
             default -> System.out.println("Something is wrong");
         }
     }
 
     private static void handleJava() {
-        System.out.println("Time for java, But specifically focus on");
-        int javaField = (int)(Math.random() * 5.0);
-        System.out.println("Case field: " + javaField);
-        switch (javaField) {
-            case 0 -> System.out.println("Spring - Research  -- 2 Hour");
-            case 1 -> System.out.println("Spring - Udemy Tutorial -- 2 Hours");
-            case 2 -> System.out.println("Maven -  Research -- 2 Hour");
-            case 3 -> System.out.println("Java Textbook -- 2 Hour");
-            case 4 -> System.out.println("Java SoloLearn -- 2 Hour");
-            case 5 -> System.out.println("Java W3Schools -- 2 Hour");
+        System.out.println("Time for Java");
+        int task = (int) (Math.random() * 3.0);
+        System.out.println("Case field: " + task);
+        switch (task) {
+            case 0 -> System.out.println("Complete a Java tutorial -- 1 Hour");
+            case 1 -> System.out.println("Work on a Java project -- 1 Hour");
+            case 2 -> System.out.println("Review Java concepts -- 1 Hour");
             default -> System.out.println("Something is wrong");
         }
     }
 
     private static void handleInternship() {
         System.out.println("Time for Internship related at Konecta");
-        int task = (int)(Math.random() * 4.0);
+        int task = (int) (Math.random() * 4.0);
         System.out.println("Case field: " + task);
         switch (task) {
             case 0 -> System.out.println("HSNM Hotspot  -- 2 Hour");
@@ -100,7 +121,7 @@ public class Main {
 
     private static void handleGame() {
         System.out.println("Play a game to refresh");
-        int gameOption =  (int)(Math.random() * 3.0);
+        int gameOption = (int) (Math.random() * 3.0);
         System.out.println("Which game: " + gameOption);
         switch (gameOption) {
             case 0 -> System.out.println("Tekken  -- 30 minutes");
@@ -112,8 +133,8 @@ public class Main {
 
     private static void handleFrontEnd() {
         System.out.println("Find a Youtube course tutorial to learn front-end");
-        int lessonOption =  (int)(Math.random() * 7.0);
-        System.out.println("Your tutorial is option:  " + lessonOption+"\nOn the previous session the conclusion was that the I have to really lean html and css\n\tLearn: ");
+        int lessonOption = (int) (Math.random() * 7.0);
+        System.out.println("Your tutorial is option:  " + lessonOption + "\nOn the previous session the conclusion was that the I have to really lean html and css\n\tLearn: ");
         switch (lessonOption) {
             case 0 -> System.out.println("CSS");
             case 1 -> System.out.println("Bootstrap");
@@ -122,7 +143,6 @@ public class Main {
             case 4 -> System.out.println("HTML wireframes and templates -- 1 hour");
             case 5 -> System.out.println("WordPress");
             case 6 -> System.out.println("Remember to buy the Sass Course");
-
             default -> System.out.println("Something is your game code");
         }
     }
@@ -146,6 +166,28 @@ public class Main {
             case 0 -> System.out.println("Restart Microsoft Learn GitHub lesson - 1 Hour ");
             case 1 -> System.out.println("Start the W3Schools GitHub lesson - 1 Hour ");
             default -> System.out.println("Something is wrong");
+        }
+    }
+
+    private static void savePickedTasks() {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(TASK_FILE))) {
+            for (int task : pickedTasks) {
+                writer.write(task + "\n");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private static void loadPickedTasks() {
+        try (BufferedReader reader = new BufferedReader(new FileReader(TASK_FILE))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                pickedTasks.add(Integer.parseInt(line));
+            }
+        } catch (IOException e) {
+            // If the file does not exist or cannot be read, initialize with default values
+            pickedTasks = new HashSet<>();
         }
     }
 }
