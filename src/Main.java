@@ -18,7 +18,7 @@ public class Main {
     }
 
     private static void initializeTaskList() {
-        for (int i = 0; i < 38; i++) {
+        for (int i = 0; i < 36; i++) {
             if (!pickedTasks.contains(i)) {
                 taskList.add(i);
             }
@@ -58,12 +58,12 @@ public class Main {
             case 15 -> System.out.println("MongoDB -- 2 Hours");
             case 16 -> System.out.println("Portfolio -- 1 Hour 30 Minutes\n\tLast time you were working on the Canva Design using chatGPT - Continue from there");
             case 17 -> System.out.println("The Complete 2024 Web Development Bootcamp -- 2 Hours");
-            case 18 -> System.out.println(".NET Core MVC - The Complete Guide 2024 [E-commerce app] -- 2 Hours");
+            case 18 -> System.out.println(".NET Core MVC - The Complete Guide 2024 [E-commerce app] -- 2 Hours\n\tComplete section 2.");
             case 19 -> System.out.println("The Complete JavaScript Course 2024: From Zero to Expert! -- Complete a section");
             case 20 -> handleInternship();
             case 21 -> handleGame();
             case 22 -> System.out.println("Solo learn - Python for Beginners -- 2 HOURS");
-            case 23 -> System.out.println("Organize your Programming books & Docs folder -- 1 hour <<<<<<<DONE>>>>>>>");
+            case 23 -> System.out.println("Manage your YouTube playlists and channel subscription -- 45 minutes.");
             case 24 -> System.out.println("Find out to push a project from inteliJ to GitHub. -- 1 hour 30 minutes");
             case 25 -> System.out.println("Update CV. -- 30 minutes");
             case 26 -> handleFrontEnd();
@@ -73,11 +73,11 @@ public class Main {
             case 30 -> System.out.println("Organize your Personal OneDrive Documents -- 30 minutes");
             case 31 -> handleForex();
             case 32 -> handleGitHub();
-            case 33 -> System.out.println("Take a tutorial on how to use Copilot -- 1 hour 30 minutes.");
+            case 33 -> System.out.println("Explore the bookmarks you have saved -- 45 minutes.");
             case 34 -> System.out.println("Manage Web browser Bookmarks -- 45 minutes.");
-            case 35 -> System.out.println("GO Through Discord and understand how it works -- 30 minutes.");
-            case 36 -> System.out.println("Manage your YouTube playlists and channel subscription -- 45 minutes.");
-            case 37 -> System.out.println("Exercise -- 15 minutes.");
+            case 35 -> System.out.println("Exercise -- 15 minutes.");
+
+
             default -> System.out.println("Error Somewhere");
         }
     }
