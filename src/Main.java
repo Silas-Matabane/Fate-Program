@@ -52,7 +52,7 @@ public class Main {
             case 9 -> System.out.println("Organize your music library -- 1 Hour");
             case 10 -> System.out.println("ASP.NET documentation -- 2 Hours");
             case 11 -> System.out.println("100 days - Python Project -- Complete A day");
-            case 12 -> System.out.println("RESTful Web API - The Complete Guide (.NET7 API) Part 1 -- 2 Hours");
+            case 12 -> System.out.println("RESTful Web API - The Complete Guide (.NET7 API) Part 1 -- Complete a section");
             case 13 -> System.out.println("Try to solve 1 leet code problem -- 30 minutes");
             case 14 -> System.out.println("MySQL Udemy Project -- Complete a session");
             case 15 -> System.out.println("MongoDB -- 2 Hours");
@@ -133,7 +133,7 @@ public class Main {
 
     private static void handleFrontEnd() {
         System.out.println("Find a Youtube course tutorial to learn front-end");
-        int lessonOption = (int) (Math.random() * 7.0);
+        int lessonOption = (int) (Math.random() * 7);
         System.out.println("Your tutorial is option:  " + lessonOption + "\nOn the previous session the conclusion was that the I have to really lean html and css\n\tLearn: ");
         switch (lessonOption) {
             case 0 -> System.out.println("CSS");
