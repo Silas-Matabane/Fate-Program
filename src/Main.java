@@ -18,7 +18,7 @@ public class Main {
     }
 
     private static void initializeTaskList() {
-        for (int i = 0; i < 37; i++) {
+        for (int i = 0; i < 36; i++) {
             if (!pickedTasks.contains(i)) {
                 taskList.add(i);
             }
@@ -65,7 +65,7 @@ public class Main {
             case 22 -> System.out.println("Solo learn - Python for Beginners -- 2 HOURS");
             case 23 -> System.out.println("Manage your YouTube playlists and channel subscription -- 45 minutes.");
             case 24 -> System.out.println("Find out to push a project from inteliJ to GitHub. -- 1 hour 30 minutes");
-            case 25 -> System.out.println("Update CV. -- 30 minutes");
+            case 25 -> System.out.println("Learn your saved vocabulary words -- 30 minutes.");
             case 26 -> handleFrontEnd();
             case 27 -> System.out.println("Organize your bookmarks and sync them across browsers -- 30 minutes");
             case 28 -> System.out.println("Web Development Sololearn -- 1 hour");
@@ -76,7 +76,7 @@ public class Main {
             case 33 -> System.out.println("Explore the bookmarks you have saved -- 45 minutes.");
             case 34 -> System.out.println("Manage Web browser Bookmarks -- 45 minutes.");
             case 35 -> System.out.println("Exercise -- 15 minutes.");
-            case 36 -> System.out.println("Learn your saved vocabulary words -- 30 minutes.");
+
 
 
             default -> System.out.println("Error Somewhere");
