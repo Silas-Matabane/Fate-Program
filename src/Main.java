@@ -18,7 +18,7 @@ public class Main {
     }
 
     private static void initializeTaskList() {
-        for (int i = 0; i < 36; i++) {
+        for (int i = 0; i < 37; i++) {
             if (!pickedTasks.contains(i)) {
                 taskList.add(i);
             }
@@ -42,7 +42,7 @@ public class Main {
         switch (fate) {
             case 0 -> System.out.println("Introduction to C# -- SoloLearn -- 1 Hours");
             case 1 -> handleMusic();
-            case 2 -> System.out.println("Ethical Hacking\n\tNext Session Complete Section 4 & 5");
+            case 2 -> System.out.println("Ethical Hacking\n\tNext Session Complete Section 6 & 7");
             case 3 -> System.out.println("Database TextBook Tinny College Project -- 30 Minutes");
             case 4 -> System.out.println("Computer Networks -- Textbook -- 2 Hours");
             case 5 -> handleJava();
@@ -52,7 +52,7 @@ public class Main {
             case 9 -> System.out.println("Organize your music library -- 1 Hour");
             case 10 -> System.out.println("ASP.NET documentation -- 2 Hours");
             case 11 -> System.out.println("100 days - Python Project -- Complete A day");
-            case 12 -> System.out.println("RESTful Web API - The Complete Guide (.NET7 API) Part 1 -- Complete a section");
+            case 12 -> System.out.println("RESTful Web API - The Complete Guide (.NET7 API) Part 1 -- Complete a section - next : 3");
             case 13 -> System.out.println("Try to solve 1 leet code problem -- 30 minutes");
             case 14 -> System.out.println("MySQL Udemy Project -- Complete a session");
             case 15 -> System.out.println("MongoDB -- 2 Hours");
@@ -76,6 +76,7 @@ public class Main {
             case 33 -> System.out.println("Explore the bookmarks you have saved -- 45 minutes.");
             case 34 -> System.out.println("Manage Web browser Bookmarks -- 45 minutes.");
             case 35 -> System.out.println("Exercise -- 15 minutes.");
+            case 36 -> System.out.println("Learn your saved vocabulary words -- 30 minutes.");
 
 
             default -> System.out.println("Error Somewhere");
