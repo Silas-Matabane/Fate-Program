@@ -18,7 +18,7 @@ public class Main {
     }
 
     private static void initializeTaskList() {
-        for (int i = 0; i < 36; i++) {
+        for (int i = 0; i < 37; i++) {
             if (!pickedTasks.contains(i)) {
                 taskList.add(i);
             }
@@ -76,6 +76,7 @@ public class Main {
             case 33 -> System.out.println("Explore the bookmarks you have saved -- 45 minutes.");
             case 34 -> System.out.println("Manage Web browser Bookmarks -- 45 minutes.");
             case 35 -> System.out.println("Exercise -- 15 minutes.");
+            case 36 -> System.out.println("Manage your Social media pages  -- 60 minutes");
 
 
 
@@ -112,11 +113,11 @@ public class Main {
         int task = (int) (Math.random() * 4.0);
         System.out.println("Case field: " + task);
         switch (task) {
-            case 0 -> System.out.println("HSNM Hotspot  -- 2 Hour");
-            case 1 -> System.out.println("WordPress -- 3 Hours");
-            case 2 -> System.out.println("Microsoft Learn  -- 2 Hour");
-            case 3 -> System.out.println("Portfolio of Evidence -- 2 Hour");
-            default -> System.out.println("Something is wrong");
+            case 0 -> System.out.println("\tHSNM Hotspot  -- 2 Hour");
+            case 1 -> System.out.println("\tWordPress -- 3 Hours");
+            case 2 -> System.out.println("\tMicrosoft Learn  -- 2 Hour");
+            case 3 -> System.out.println("\tPortfolio of Evidence -- 2 Hour");
+            default -> System.out.println("\tSomething is wrong");
         }
     }
 
