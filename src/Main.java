@@ -18,7 +18,7 @@ public class Main {
     }
 
     private static void initializeTaskList() {
-        for (int i = 0; i < 37; i++) {
+        for (int i = 0; i < 38; i++) {
             if (!pickedTasks.contains(i)) {
                 taskList.add(i);
             }
@@ -46,7 +46,7 @@ public class Main {
             case 3 -> System.out.println("Database TextBook Tinny College Project -- 30 Minutes");
             case 4 -> System.out.println("Computer Networks -- Textbook -- 2 Hours");
             case 5 -> handleJava();
-            case 6 -> System.out.println("System Design Textbook - 1 Hour for now");
+            case 6 -> System.out.println("Organize your paper notes  -- 60 minutes");
             case 7 -> System.out.println("Continue FreeCodeCamp -- 2 Hours");
             case 8 -> System.out.println("Organize your screenshot pics -- 1 Hour");
             case 9 -> System.out.println("Organize your music library -- 1 Hour");
@@ -64,10 +64,10 @@ public class Main {
             case 21 -> handleGame();
             case 22 -> System.out.println("Solo learn - Python for Beginners -- 2 HOURS");
             case 23 -> System.out.println("Manage your YouTube playlists and channel subscription -- 45 minutes.");
-            case 24 -> System.out.println("Find out to push a project from inteliJ to GitHub. -- 1 hour 30 minutes");
+            case 24 -> System.out.println("Find out how the mouse works   -- 60 minutes");
             case 25 -> System.out.println("Learn your saved vocabulary words -- 30 minutes.");
             case 26 -> handleFrontEnd();
-            case 27 -> System.out.println("Organize your bookmarks and sync them across browsers -- 30 minutes");
+            case 27 -> System.out.println("Import your Edge bookmarks to Chrome -- 15 minutes");
             case 28 -> System.out.println("Web Development Sololearn -- 1 hour");
             case 29 -> System.out.println("Research How to add an image to Github readme File -- 1 hour");
             case 30 -> System.out.println("Organize your Personal OneDrive Documents -- 30 minutes");
@@ -77,6 +77,9 @@ public class Main {
             case 34 -> System.out.println("Manage Web browser Bookmarks -- 45 minutes.");
             case 35 -> System.out.println("Exercise -- 15 minutes.");
             case 36 -> System.out.println("Manage your Social media pages  -- 60 minutes");
+            case 37 -> System.out.println("Organize your linkedIn skills on your certificates  -- 60 minutes");
+
+
 
 
 
