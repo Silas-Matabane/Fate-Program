@@ -18,7 +18,7 @@ public class Main {
     }
 
     private static void initializeTaskList() {
-        for (int i = 0; i < 37; i++) {
+        for (int i = 0; i < 38; i++) {
             if (!pickedTasks.contains(i)) {
                 taskList.add(i);
             }
@@ -69,7 +69,7 @@ public class Main {
             case 26 -> handleFrontEnd();
             case 27 -> System.out.println("Import your Edge bookmarks to Chrome -- 15 minutes");
             case 28 -> System.out.println("Web Development Sololearn -- 1 hour");
-            case 29 -> System.out.println("Organize your linkedIn skills on your certificates  -- 60 minutes");
+            case 29 -> System.out.println("Research How to add an image to Github readme File -- 1 hour");
             case 30 -> System.out.println("Organize your Personal OneDrive Documents -- 30 minutes");
             case 31 -> handleForex();
             case 32 -> handleGitHub();
@@ -77,7 +77,7 @@ public class Main {
             case 34 -> System.out.println("Manage Web browser Bookmarks -- 45 minutes.");
             case 35 -> System.out.println("Exercise -- 15 minutes.");
             case 36 -> System.out.println("Manage your Social media pages  -- 60 minutes");
-
+            case 37 -> System.out.println("Organize your linkedIn skills on your certificates  -- 60 minutes");
 
 
 
