@@ -27,7 +27,7 @@ public class Main {
         // Generate a new task that hasn't been picked yet
         int task;
         do {
-            task = (int) (Math.random() * 52);
+            task = (int) (Math.random() * 51);
         } while (pickedTasks.contains(task));
 
         // Add the new task to the picked tasks file
@@ -52,7 +52,6 @@ public class Main {
             case 10 -> System.out.println("Case: 10\nTask Name: ASP.NET documentation -- 2 Hours");
             case 11 -> System.out.println("Case: 11\nTask Name: 100 days - Python Project -- Complete A day");
             case 12 -> System.out.println("Case: 12\nTask Name: RESTful Web API - The Complete Guide (.NET7 API) Part 1 -- Complete a section - next : 3");
-            case 13 -> System.out.println("Case: 13\nTask Name: Try to solve 1 leet code problem -- 30 minutes");
             case 14 -> System.out.println("Case: 14\nTask Name: MySQL Udemy Project -- Complete a session");
             case 15 -> System.out.println("Case: 15\nTask Name: MongoDB -- 2 Hours");
             case 16 -> System.out.println("Case: 16\nTask Name: Portfolio -- 1 Hour 30 Minutes\n\tLast time you were working on the Canva Design using chatGPT - Continue from there");
@@ -80,7 +79,7 @@ public class Main {
             case 38 -> System.out.println("Case: 38\nTask Name: Practice Guitar -- 1 Hour");
             case 39 -> System.out.println("Case: 39\nTask Name: Learn a new song -- 1 Hour");
             case 40 -> System.out.println("Case: 40\nTask Name: HSNM Hotspot  -- 2 Hour");
-            case 41 -> System.out.println("Case: 41\nTask Name: Portfolio of Evidence -- 2 Hour");
+            // case 41 -> System.out.println("Case: 41\nTask Name: Portfolio of Evidence -- 2 Hour");
             case 42 -> System.out.println("Case: 42\nTask Name: Tekken  -- 30 minutes");
             case 43 -> System.out.println("Case: 43\nTask Name: Fifa -- 30 minutes");
             case 44 -> System.out.println("Case: 44\nTask Name: Need for Speed  -- 30 minutes");
