@@ -75,7 +75,7 @@ public class Main {
             case 34 -> System.out.println("Case: 34\nTask Name: Manage Web browser Bookmarks -- 45 minutes.");
             case 35 -> System.out.println("Case: 35\nTask Name: Exercise -- 15 minutes.");
             case 36 -> System.out.println("Case: 36\nTask Name: Manage your Social media pages  -- 60 minutes");
-            case 37 -> System.out.println("Case: 37\nTask Name: Organize your linkedIn skills on your certificates  -- 60 minutes");
+            //case 37 -> System.out.println("Case: 37\nTask Name: Organize your linkedIn skills on your certificates  -- 60 minutes");
             case 38 -> System.out.println("Case: 38\nTask Name: Practice Guitar -- 1 Hour");
             case 39 -> System.out.println("Case: 39\nTask Name: Learn a new song -- 1 Hour");
             case 40 -> System.out.println("Case: 40\nTask Name: HSNM Hotspot  -- 2 Hour");
@@ -85,7 +85,7 @@ public class Main {
             case 44 -> System.out.println("Case: 44\nTask Name: Need for Speed  -- 30 minutes");
             case 45 -> System.out.println("Case: 45\nTask Name: CSS");
             case 46 -> System.out.println("Case: 46\nTask Name: Bootstrap");
-            case 47 -> System.out.println("Case: 47\nTask Name: Sass");
+            //case 47 -> System.out.println("Case: 47\nTask Name: Sass");
             case 48 -> System.out.println("Case: 48\nTask Name: Start the W3Schools GitHub lesson - 1 Hour ");
             case 49 -> System.out.println("Case: 49\nTask Name: HTML wireframes and templates -- 1 hour");
             case 50 -> System.out.println("Case: 50\nTask Name: Restart Microsoft Learn GitHub lesson - 1 Hour ");
