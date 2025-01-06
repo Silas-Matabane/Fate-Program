@@ -5,7 +5,7 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-        String filePath = "picked_tasks.txt";
+        String filePath = "C:/path/to/your/directory/picked_tasks.txt"; // Update this path
         Set<Integer> pickedTasks = new HashSet<>();
 
         // Read picked tasks from file
@@ -27,7 +27,7 @@ public class Main {
         // Generate a new task that hasn't been picked yet
         int task;
         do {
-            task = (int) (Math.random() * 51);
+            task = (int) (Math.random() * 52);
         } while (pickedTasks.contains(task));
 
         // Add the new task to the picked tasks file
@@ -52,6 +52,7 @@ public class Main {
             case 10 -> System.out.println("Case: 10\nTask Name: ASP.NET documentation -- 2 Hours");
             case 11 -> System.out.println("Case: 11\nTask Name: 100 days - Python Project -- Complete A day");
             case 12 -> System.out.println("Case: 12\nTask Name: RESTful Web API - The Complete Guide (.NET7 API) Part 1 -- Complete a section - next : 3");
+            case 13 -> System.out.println("Case: 13\nTask Name: Try to solve 1 leet code problem -- 30 minutes");
             case 14 -> System.out.println("Case: 14\nTask Name: MySQL Udemy Project -- Complete a session");
             case 15 -> System.out.println("Case: 15\nTask Name: MongoDB -- 2 Hours");
             case 16 -> System.out.println("Case: 16\nTask Name: Portfolio -- 1 Hour 30 Minutes\n\tLast time you were working on the Canva Design using chatGPT - Continue from there");
@@ -75,21 +76,21 @@ public class Main {
             case 34 -> System.out.println("Case: 34\nTask Name: Manage Web browser Bookmarks -- 45 minutes.");
             case 35 -> System.out.println("Case: 35\nTask Name: Exercise -- 15 minutes.");
             case 36 -> System.out.println("Case: 36\nTask Name: Manage your Social media pages  -- 60 minutes");
-            //case 37 -> System.out.println("Case: 37\nTask Name: Organize your linkedIn skills on your certificates  -- 60 minutes");
+            case 37 -> System.out.println("Case: 37\nTask Name: Organize your linkedIn skills on your certificates  -- 60 minutes");
             case 38 -> System.out.println("Case: 38\nTask Name: Practice Guitar -- 1 Hour");
             case 39 -> System.out.println("Case: 39\nTask Name: Learn a new song -- 1 Hour");
             case 40 -> System.out.println("Case: 40\nTask Name: HSNM Hotspot  -- 2 Hour");
-            // case 41 -> System.out.println("Case: 41\nTask Name: Portfolio of Evidence -- 2 Hour");
+            case 41 -> System.out.println("Case: 41\nTask Name: Portfolio of Evidence -- 2 Hour");
             case 42 -> System.out.println("Case: 42\nTask Name: Tekken  -- 30 minutes");
             case 43 -> System.out.println("Case: 43\nTask Name: Fifa -- 30 minutes");
             case 44 -> System.out.println("Case: 44\nTask Name: Need for Speed  -- 30 minutes");
             case 45 -> System.out.println("Case: 45\nTask Name: CSS");
             case 46 -> System.out.println("Case: 46\nTask Name: Bootstrap");
-            //case 47 -> System.out.println("Case: 47\nTask Name: Sass");
-            case 48 -> System.out.println("Case: 48\nTask Name: Start the W3Schools GitHub lesson - 1 Hour ");
+            case 47 -> System.out.println("Case: 47\nTask Name: Sass");
+            case 48 -> System.out.println("Case: 48\nTask Name: Tailwind CSS");
             case 49 -> System.out.println("Case: 49\nTask Name: HTML wireframes and templates -- 1 hour");
             case 50 -> System.out.println("Case: 50\nTask Name: Restart Microsoft Learn GitHub lesson - 1 Hour ");
-
+            case 51 -> System.out.println("Case: 51\nTask Name: Start the W3Schools GitHub lesson - 1 Hour ");
             default -> System.out.println("Error: Task ID out of range");
         }
     }
