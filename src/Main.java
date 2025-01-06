@@ -8,6 +8,9 @@ public class Main {
     public static void main(String[] args) {
         List<Integer> pickedTasks = loadPickedTasks();
 
+        // Sort the list of picked tasks
+        Collections.sort(pickedTasks);
+
         // Print the current list of picked tasks
         System.out.println("Current picked tasks: " + pickedTasks);
 
@@ -25,6 +28,9 @@ public class Main {
 
         // Add the new task to the picked tasks list
         pickedTasks.add(task);
+
+        // Sort the list of picked tasks again
+        Collections.sort(pickedTasks);
 
         // Print the task
         switch (task) {
