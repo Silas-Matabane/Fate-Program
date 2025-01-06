@@ -1,9 +1,15 @@
+import java.io.*;
 import java.util.*;
 
 public class Main {
 
+    private static final String FILE_NAME = "pickedTasks.txt";
+
     public static void main(String[] args) {
-        List<Integer> pickedTasks = new ArrayList<>();
+        List<Integer> pickedTasks = loadPickedTasks();
+
+        // Print the current list of picked tasks
+        System.out.println("Current picked tasks: " + pickedTasks);
 
         // Check if all tasks have been picked
         if (pickedTasks.size() >= 52) {
@@ -75,6 +81,35 @@ public class Main {
             case 50 -> System.out.println("Case: 50\nTask Name: Restart Microsoft Learn GitHub lesson - 1 Hour ");
             case 51 -> System.out.println("Case: 51\nTask Name: Start the W3Schools GitHub lesson - 1 Hour ");
             default -> System.out.println("Error: Task ID out of range");
+        }
+
+        // Print the updated list of picked tasks
+        System.out.println("Updated picked tasks: " + pickedTasks);
+
+        // Save the updated list of picked tasks
+        savePickedTasks(pickedTasks);
+    }
+
+    private static List<Integer> loadPickedTasks() {
+        List<Integer> pickedTasks = new ArrayList<>();
+        try (BufferedReader reader = new BufferedReader(new FileReader(FILE_NAME))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                pickedTasks.add(Integer.parseInt(line));
+            }
+        } catch (IOException e) {
+            System.out.println("No previous tasks found, starting with an empty list.");
+        }
+        return pickedTasks;
+    }
+
+    private static void savePickedTasks(List<Integer> pickedTasks) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(FILE_NAME))) {
+            for (int task : pickedTasks) {
+                writer.write(task + "\n");
+            }
+        } catch (IOException e) {
+            System.out.println("Error saving picked tasks: " + e.getMessage());
         }
     }
 }
