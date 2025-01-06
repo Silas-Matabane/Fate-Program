@@ -1,22 +1,9 @@
-import java.io.*;
-import java.nio.file.*;
 import java.util.*;
 
 public class Main {
 
     public static void main(String[] args) {
-        String filePath = "C:/path/to/your/directory/picked_tasks.txt"; // Update this path
-        Set<Integer> pickedTasks = new HashSet<>();
-
-        // Read picked tasks from file
-        try (BufferedReader reader = Files.newBufferedReader(Paths.get(filePath))) {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                pickedTasks.add(Integer.parseInt(line.trim()));
-            }
-        } catch (IOException e) {
-            System.out.println("Error reading picked tasks file: " + e.getMessage());
-        }
+        List<Integer> pickedTasks = new ArrayList<>();
 
         // Check if all tasks have been picked
         if (pickedTasks.size() >= 52) {
@@ -30,12 +17,8 @@ public class Main {
             task = (int) (Math.random() * 52);
         } while (pickedTasks.contains(task));
 
-        // Add the new task to the picked tasks file
-        try (BufferedWriter writer = Files.newBufferedWriter(Paths.get(filePath), StandardOpenOption.APPEND)) {
-            writer.write(task + "\n");
-        } catch (IOException e) {
-            System.out.println("Error writing to picked tasks file: " + e.getMessage());
-        }
+        // Add the new task to the picked tasks list
+        pickedTasks.add(task);
 
         // Print the task
         switch (task) {
@@ -52,7 +35,7 @@ public class Main {
             case 10 -> System.out.println("Case: 10\nTask Name: ASP.NET documentation -- 2 Hours");
             case 11 -> System.out.println("Case: 11\nTask Name: 100 days - Python Project -- Complete A day");
             case 12 -> System.out.println("Case: 12\nTask Name: RESTful Web API - The Complete Guide (.NET7 API) Part 1 -- Complete a section - next : 3");
-            case 13 -> System.out.println("Case: 13\nTask Name: Try to solve 1 leet code problem -- 30 minutes");
+            //case 13 -> System.out.println("Case: 13\nTask Name: Try to solve 1 leet code problem -- 30 minutes");
             case 14 -> System.out.println("Case: 14\nTask Name: MySQL Udemy Project -- Complete a session");
             case 15 -> System.out.println("Case: 15\nTask Name: MongoDB -- 2 Hours");
             case 16 -> System.out.println("Case: 16\nTask Name: Portfolio -- 1 Hour 30 Minutes\n\tLast time you were working on the Canva Design using chatGPT - Continue from there");
