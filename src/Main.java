@@ -82,8 +82,7 @@ public class Main {
         System.out.print("\nHow many hours do you want to spend on this task?\n\tEnter the number of hours: ");
         Scanner scanner = new Scanner(System.in);
         int hours = scanner.nextInt();
-        int minutes = hours * 60;
-        return minutes;
+        return hours * 60;
     }
 
 }
