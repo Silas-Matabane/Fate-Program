@@ -60,7 +60,7 @@ public class Main {
             case 47 -> System.out.println("\tTask Number 47\n\t\tTask Name: Sass");
             case 48 -> System.out.println("\tTask Number 48\n\t\tTask Name: Tailwind CSS");
             case 49 -> System.out.println("\tTask Number 49\n\t\tTask Name: HTML wireframes and templates -- 1 hour");
-            case 50 -> System.out.println("\tTask Number 50\n\t\tTask Name: Restart Microsoft Learn GitHub lesson - 1 Hour ");
+            case 50 -> System.out.println("\tTask Number 50\n\t\tTask Name: Restart Microsoft Learn GitHub lessons - 1 Hour ");
             case 51 -> System.out.println("\tTask Number 51\n\t\tTask Name: Start the W3Schools GitHub lesson - 1 Hour ");
             case 52 -> System.out.println("\tTask Number 52\n\t\tTask Name: Find out How to convert Speadsheet to PDF");
             case 53 -> System.out.println("\tTask Number 53\n\t\tTask Name: Organize your CV's and Delete Unnecessary ones -- 30 minutes");
